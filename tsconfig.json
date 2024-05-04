@@ -1,0 +1,13 @@
+{
+  "extends": "@docusaurus/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "paths": {
+    "@/components/*": ["./src/components/*"],
+    "@/css/*": ["./src/css/*"],
+    "@/data/*": ["./data/*"],
+    "@/image/*": ["./static/image/*"],
+    "@theme/*": ["./node_modules/@docusaurus/plugin-ideal-image/lib/theme/*"]
+  }
+}

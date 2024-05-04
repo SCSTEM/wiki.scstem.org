@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Inter";
+  src:
+    url("/fonts/inter-variable.ttf") format("truetype supports variations"),
+    url("/fonts/inter-variable.ttf") format("truetype-variations");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "SourceCodePro";
+  src:
+    url("/fonts/sourcecodepro-variable.ttf")
+      format("truetype supports variations"),
+    url("/fonts/sourcecodepro-variable.ttf") format("truetype-variations");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src:
+    url("/fonts/orbitron-variable.ttf") format("truetype supports variations"),
+    url("/fonts/orbitron-variable.ttf") format("truetype-variations");
+  font-weight: 100 900;
+}
+
+:root {
+  --ifm-font-family-base: "Inter";
+  --ifm-font-family-monospace: "SourceCodePro";
+  --ifm-link-hover-color: var(--ifm-color-primary);
+
+  color: #171717;
+  --ifm-footer-background-color: #4b5563;
+  --ifm-color-primary-darkest: #3b63a3;
+  --ifm-color-primary-darker: #336ac4;
+  --ifm-color-primary-dark: #3375df;
+  --ifm-color-primary: #3b82f6;
+  --ifm-color-primary-light: #6898e7;
+  --ifm-color-primary-lighter: #8fafe2;
+  --ifm-color-primary-lightest: #b3c5e3;
+}
+
+[data-theme="dark"] {
+  color: #fafafa;
+  --ifm-background-color: #171717;
+  --ifm-color-primary-darkest: #938032;
+  --ifm-color-primary-darker: #b1962a;
+  --ifm-color-primary-dark: #d7b21c;
+  --ifm-color-primary: #facc15;
+  --ifm-color-primary-light: #e6c644;
+  --ifm-color-primary-lighter: #dcc56c;
+  --ifm-color-primary-lightest: #d9ca90;
+}
+
+::selection {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-background-color);
+}
+
+.theme-doc-markdown h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron";
+}
