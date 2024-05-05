@@ -29,12 +29,12 @@ export default function Home(): JSX.Element {
           alt="South Central STEM Collective's logo"
           className="object-contain"
         />
-        <Link href="/wiki">
+        <Link href="/welcome">
           <button
             className="border-0 align-middle select-none font-bold text-md md:text-lg text-[#171717] text-center transition-all disabled:opacity-50 cursor-pointer disabled:shadow-none disabled:pointer-events-none py-3 px-6 rounded-lg bg-[var(--ifm-color-primary)] shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none flex items-center gap-3"
             type="button"
           >
-            Enter the wiki
+            Enter
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

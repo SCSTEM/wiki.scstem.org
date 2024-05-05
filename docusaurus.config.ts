@@ -19,7 +19,7 @@ const config: Config = {
       "classic",
       {
         docs: {
-          routeBasePath: "wiki",
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.config.ts"),
           path: "./wiki",
         },
@@ -44,7 +44,7 @@ const config: Config = {
         //   type: "docSidebar",
         //   sidebarId: "wiki",
         //   position: "left",
-        //   label: "Tutorial",
+        //   label: "Overview",
         // },
         {
           href: "https://scstem.org",
