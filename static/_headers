@@ -6,3 +6,6 @@ https://*wiki-scstem-org.pages.dev/*
 
 https://wiki.scstem.org/image/*
   X-Robots-Tag: noindex
+
+https://wiki.scstem.org/assets/*
+  X-Robots-Tag: noindex
