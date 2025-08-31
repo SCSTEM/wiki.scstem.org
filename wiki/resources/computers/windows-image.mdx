@@ -17,7 +17,6 @@ As dissussed [here](./), all computers are configured with a base image to keep 
 The following process is subject to change (and very likely will in the near future), so keeping things general.
 
 1. Create base image in a VM
-
    - Currently, Carson has the base image in a VMware Workstation VM with incremental snapshots as software is installed and updates are applied
    - The base image should be as generic as possible, meaning:
      - Do not activate Windows
@@ -26,12 +25,10 @@ The following process is subject to change (and very likely will in the near fut
    - The VM's disk size should be 100GB or less to ensure image will fit on most laptops/desktops
 
 2. Capture VM image with Clonezilla
-
    - Capture the entire virtual disk (not just select partitions)
    - Store image on external drive or network Storage
 
 3. Boot target machine to UEFI. Ensure the following settings/features are enabled:
-
    - TPM 2.0
    - Secure Boot
    - Virtualization
@@ -39,7 +36,6 @@ The following process is subject to change (and very likely will in the near fut
 
 4. Boot target machine to Clonezilla and overwrite the drive with the previously captured image. Again, this should be taking the image of a device and writing it to the local device - not just single partitions.
 5. After imaging is finished, boot target machine to GParted Live, Hiren's BootCD, or similar to re-partition the target disk
-
    - Move the recovery partition to the end of the drive. This should leave unallocated space between the main Windows (C) partition and the recovery partition.
    - Expand the Windows (C) partition to fill the unallocated space.
 

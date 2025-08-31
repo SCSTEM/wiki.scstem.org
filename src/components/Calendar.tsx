@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { ReactNode } from "react";
 
 interface Props {
   calendars: Calendar[];
@@ -73,7 +74,7 @@ export default function CalendarFrame({
   noCalList,
   noTimeZone,
   className,
-}: Props): JSX.Element {
+}: Props): ReactNode {
   let src = "";
   if (calendars) {
     calendars.forEach((calendar) => {

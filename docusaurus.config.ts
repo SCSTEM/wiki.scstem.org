@@ -10,13 +10,8 @@ const config: Config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "image/logo.svg",
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
-  future: {
-    experimental_faster: true,
-  },
+  i18n: { defaultLocale: "en", locales: ["en"] },
+  future: { experimental_faster: true, v4: true },
   presets: [
     [
       "classic",
@@ -29,9 +24,7 @@ const config: Config = {
         theme: {
           customCss: ["./src/css/custom.css", "./src/css/tailwind.css"],
         },
-        gtag: {
-          trackingID: "G-LXG6C2VKTG",
-        },
+        gtag: { trackingID: "G-LXG6C2VKTG" },
       } satisfies Preset.Options,
     ],
   ],
@@ -49,11 +42,7 @@ const config: Config = {
         //   position: "left",
         //   label: "Overview",
         // },
-        {
-          href: "https://scstem.org",
-          label: "Main site",
-          position: "right",
-        },
+        { href: "https://scstem.org", label: "Main site", position: "right" },
       ],
     },
     footer: {
@@ -62,38 +51,18 @@ const config: Config = {
         {
           title: "Where to find us",
           items: [
-            {
-              label: "Our website",
-              href: "https://scstem.org",
-            },
-            {
-              label: "Facebook",
-              href: "https://go.scstem.tech/facebook",
-            },
-            {
-              label: "LinkedIn",
-              href: "https://go.scstem.tech/linkedin",
-            },
-            {
-              label: "GitHub",
-              href: "https://go.scstem.tech/github",
-            },
+            { label: "Our website", href: "https://scstem.org" },
+            { label: "Facebook", href: "https://go.scstem.tech/facebook" },
+            { label: "LinkedIn", href: "https://go.scstem.tech/linkedin" },
+            { label: "GitHub", href: "https://go.scstem.tech/github" },
           ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} South Central STEM Collective.`,
     },
-    colorMode: {
-      defaultMode: "dark",
-      disableSwitch: true,
-    },
-    prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-    zoom: {
-      selector: ".markdown img, .zoomable img",
-    },
+    colorMode: { defaultMode: "dark", disableSwitch: true },
+    prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula },
+    zoom: { selector: ".markdown img, .zoomable img" },
   } satisfies Preset.ThemeConfig,
   plugins: [
     require.resolve("docusaurus-plugin-image-zoom"),

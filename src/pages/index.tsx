@@ -1,7 +1,8 @@
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
+import { ReactNode } from "react";
 
-export default function Home(): JSX.Element {
+export default function Home(): ReactNode {
   return (
     <Layout
       title="Home"
