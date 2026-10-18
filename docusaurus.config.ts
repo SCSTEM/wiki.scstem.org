@@ -12,6 +12,7 @@ const config: Config = {
   favicon: "image/logo.svg",
   i18n: { defaultLocale: "en", locales: ["en"] },
   future: { experimental_faster: true, v4: true },
+  noIndex: true,
   presets: [
     [
       "classic",
